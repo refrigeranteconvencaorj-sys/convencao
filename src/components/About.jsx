@@ -10,8 +10,8 @@ const About = () => {
           História da Refrigerantes Convenção
         </h2>
         <p className="md:text-xl max-w-3xl mx-auto text-gray-600">
-          Uma tradição que começou em 1951 e continua sendo o refrigerante da
-          família brasileira
+          Uma tradição que começou em 1951 e continua sendo o Refrigerante da
+          Família Brasileira
         </p>
       </div>
     );
