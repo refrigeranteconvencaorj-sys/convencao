@@ -1,17 +1,5 @@
 export const locations = [
-  {
-    title: "Loja de Fábrica - Caieiras - SP",
-    address: "Av. Coronel Rodovalho, 170\nJd. Vera Tereza - Caieiras - SP",
-    phone: "(11) 4441-6329",
-    hours: "2ª a 6ª das 9h às 18h\nSábado das 9h às 13h",
-  },
-  {
-    title: "Loja de Fábrica - Itu - SP",
-    address: "Av. Dr. Otaviano Pereira Mendes, 1277\nMarginal - Itu - SP",
-    phone: "(11) 4023-4604",
-    hours: "2ª a 6ª das 8h às 18h\nSábado das 9h às 13h",
-  },
-  {
+    {
     title: "Loja de Fábrica - Campo Grande - RJ",
     address: "Av. Brasil, 44148\nCampo Grande - Distrito Industrial - RJ",
     phone: "(21) 3526-5372",
