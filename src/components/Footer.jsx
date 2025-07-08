@@ -217,10 +217,13 @@ const Footer = () => {
                   className="hover:text-green-200 transition-colors"
                 >
                   (21) 3526-3900
-                 
-                  comercial@convencaorj.ind.br 
-                </a>
+                 </a>
+
+                        
               </div>
+                            
+                 <a> comercial@convencaorj.ind.br </a>
+                          
             </div>
           </div>
 
