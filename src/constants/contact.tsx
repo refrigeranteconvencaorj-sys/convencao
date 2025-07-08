@@ -17,7 +17,7 @@ export const contactChannels = [
     icon: <Users className="w-12 h-12 mx-auto md:mx-0" />,
     title: "Trabalhe Conosco",
     description:
-      "Quer fazer parte do time da Refrigerantes Convenção? Envie seu currículo e acompanhe nossas oportunidades.",
+      "Quer fazer parte do time da Refrigerantes Convenção? Envie seu currículo e acompanhe nossas oportunidades!",
     buttonText: "Enviar Currículo",
     buttonColor: "bg-primary hover:bg-green-800",
   },
