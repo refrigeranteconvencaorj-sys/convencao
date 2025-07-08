@@ -1,0 +1,33 @@
+import React from "react";
+
+import { MessageCircle, Users, UserPlus } from "lucide-react";
+
+export const contactChannels = [
+  {
+    link: "/atendimento/sac",
+    icon: <MessageCircle className="w-12 h-12 mx-auto md:mx-0" />,
+    title: "SAC",
+    description:
+      "Tem alguma dúvida, sugestão ou reclamação? Nosso time está pronto para te ajudar! Entre em contato e responderemos o mais breve possível.",
+    buttonText: "Contatar SAC",
+    buttonColor: "bg-primary hover:bg-green-800",
+  },
+  {
+    link: "/atendimento/trabalhe-conosco",
+    icon: <Users className="w-12 h-12 mx-auto md:mx-0" />,
+    title: "Trabalhe Conosco",
+    description:
+      "Quer fazer parte do time da Refrigerantes Convenção? Envie seu currículo e acompanhe nossas oportunidades.",
+    buttonText: "Enviar Currículo",
+    buttonColor: "bg-primary hover:bg-green-800",
+  },
+  {
+    link: "/novo/cliente",
+    icon: <UserPlus className="w-12 h-12 mx-auto md:mx-0" />,
+    title: "Seja um Cliente",
+    description:
+      "Deseja se tornar um parceiro ou revender nossos produtos? Preencha o formulário e nossa equipe entrará em contato.",
+    buttonText: "Quero ser Cliente",
+    buttonColor: "bg-primary hover:bg-green-800",
+  },
+];
