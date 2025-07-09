@@ -120,7 +120,7 @@ const Footer = () => {
               <div className="flex items-center justify-center md:justify-start space-x-3">
                 <MapPin size={16} />
                 <span>
-                  Av. Brasil, 44148 - Distrito Industrial
+                  Av. Brasil, 44148 - Distrito Industrial Campo Grande
                   <br />
                   Rio de Janeiro - RJ, 23078-002
                 </span>
@@ -223,7 +223,8 @@ const Footer = () => {
               </div>
                             
                  <a> comercial@convencaorj.ind.br </a>
-                          
+                 <a>financeiro.rj@convencao.ind.br </a>
+
             </div>
           </div>
 
