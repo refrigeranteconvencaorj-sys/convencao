@@ -2,6 +2,8 @@ import React from "react";
 
 import { MessageCircle, Users, UserPlus } from "lucide-react";
 
+import links from "./links" 
+
 export const contactChannels = [
   {
     link: "/atendimento/sac",
@@ -22,7 +24,7 @@ export const contactChannels = [
     buttonColor: "bg-primary hover:bg-green-800",
   },
   {
-    link: "/novo/cliente",
+    link: links.whatsapp,
     icon: <UserPlus className="w-12 h-12 mx-auto md:mx-0" />,
     title: "Seja um Cliente",
     description:

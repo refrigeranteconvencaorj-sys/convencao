@@ -1,9 +1,11 @@
+import links from "./links" 
+
 export const FAQ_DATA = [
   {
     title: "Quero ser cliente/revendedor, como faço?",
     content: [
       "Preencha o formulário que a nossa equipe entrará em contato",
-      { href: "/novo/cliente", label: "Seja cliente" },
+      { href: links.whatsapp, label: "Seja cliente" },
       "",
       "Ou se preferir, pode ligar ou mandar Whatsapp nos números:",
       "SP: 011 4441-6300",
