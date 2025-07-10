@@ -9,12 +9,17 @@ function doGet(e) {
 }
 
 function doPost(e) {
+  if (!e.postData?.contents) {
+    const result = JSON.stringify({ status: 404, message: "Conteúdo não encontrado" })
+    return ContentService.createTextOutput(result).setMimeType(ContentService.MimeType.JSON);
+  }
+
   const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
 
   const data = JSON.parse(e.postData.contents);
   sheet.appendRow([new Date(), data.mensagem]);
 
-  const result = JSON.stringify({ message: "Done" })
+  const result = JSON.stringify({ status: 200, message: "Feito" })
   return ContentService.createTextOutput(result).setMimeType(ContentService.MimeType.JSON);
 }
 ```
