@@ -2,6 +2,8 @@ import React from "react";
 
 import { SiWhatsapp } from "@icons-pack/react-simple-icons";
 
+import links from "../constants/links";
+
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import About from "../components/About";
@@ -23,7 +25,8 @@ function Page() {
       <Contact />
       <Footer />
 
-      <div
+      <a
+        href={links.whatsapp}
         className="fixed z-1000 flex items-center right-4 bottom-4 justify-center p-3 rounded-full hover:scale-110 transition-transform bg-primary"
         style={{
           animation: "pulse 2s infinite",
@@ -31,7 +34,7 @@ function Page() {
         }}
       >
         <SiWhatsapp className="text-white w-8 h-8 mx-auto md:mx-0" />
-      </div>
+      </a>
     </div>
   );
 }
