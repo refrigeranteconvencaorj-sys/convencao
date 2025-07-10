@@ -1,60 +1,25 @@
 import convencaoCaminhao from "../../assets/convencao-caminhao.jpg";
+import links from "../../constants/links";
 
-import sheets from "../../constants/sheets";
+const link = `https://formsubmit.co/${links.forms.work}`;
 
 const WorkWithUs = () => {
-  const submit = async (data = {}) => {
-    const form = document.getElementById("formulario");
-
-    try {
-      const reader = new FileReader();
-      reader.onload = async () => {
-        const base64 = reader.result.split(",")[1];
-
-        const formData = new FormData();
-        formData.append("nome", data.nome);
-        formData.append("tel_fixo", data.tel_fixo);
-        formData.append("tel_cel", data.tel_cel);
-        formData.append("email", data.email);
-        formData.append("estado", data.estado);
-        formData.append("cidade", data.cidade);
-        formData.append("mensagem", data.mensagem);
-        formData.append("filename", data.curriculo.name);
-        formData.append("filetype", data.curriculo.type);
-        formData.append("filedata", base64);
-
-        const res = await fetch(sheets.workWithUs, {
-          method: "POST",
-          body: formData,
-        });
-
-        const text = await res.text();
-        alert(text);
-
-        form.reset();
-      };
-
-      reader.readAsDataURL(data.curriculo);
-    } catch (error) {
-      console.log(error.message || error);
-      alert("Ocorreu um erro ao enviar o formulário!");
-    }
-  };
-
   const renderForm = () => {
     return (
       <form
         id="formulario"
         className="grid grid-cols-2 space-x-4 space-y-4"
         name="formulario"
-        onSubmit={(e) => {
-          e.preventDefault();
-
-          const form = e.target;
-          const data = Object.fromEntries(new FormData(form).entries());
-          submit(data);
-        }}
+        action={link}
+        method="POST"
       >
+        <input type="hidden" name="_captcha" value="false" />
+        <input
+          type="hidden"
+          name="_next"
+          value="https://guaranaconvencaorj.com.br"
+        />
+
         {/* nome */}
         <div className="col-span-2 md:col-span-1">
           <label className="block text-sm font-medium">Nome *</label>

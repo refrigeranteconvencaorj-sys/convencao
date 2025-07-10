@@ -1,39 +1,25 @@
 import convencaoCaminhao from "../../assets/convencao-caminhao.jpg";
+import links from "../../constants/links";
 
-import sheets from "../../constants/sheets";
+const link = `https://formsubmit.co/${links.forms.report}`;
 
 const NewReport = () => {
-  const submit = async (data = {}) => {
-    const form = document.getElementById("formulario");
-
-    try {
-      await fetch(sheets.report, {
-        method: "POST",
-        body: JSON.stringify(data),
-      });
-
-      alert("Enviado com sucesso!");
-      form.reset();
-    } catch (error) {
-      console.log(error.message || error);
-      alert("Ocorreu um erro ao enviar o formulário!");
-    }
-  };
-
   const renderForm = () => {
     return (
       <form
         id="formulario"
         className="grid grid-cols-12 space-x-4 space-y-4"
         name="formulario"
-        onSubmit={(e) => {
-          e.preventDefault();
-
-          const form = e.target;
-          const data = Object.fromEntries(new FormData(form).entries());
-          submit(data);
-        }}
+        action={link}
+        method="POST"
       >
+        <input type="hidden" name="_captcha" value="false" />
+        <input
+          type="hidden"
+          name="_next"
+          value="https://guaranaconvencaorj.com.br"
+        />
+
         {/* mensagem */}
         <div className="col-span-12">
           <label className="block text-sm font-medium">Mensagem *</label>

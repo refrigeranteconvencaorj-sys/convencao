@@ -1,4 +1,7 @@
 import convencaoCaminhao from "../../assets/convencao-caminhao.jpg";
+import links from "../../constants/links";
+
+const link = `https://formsubmit.co/${links.forms.sac}`;
 
 const SAC = () => {
   const renderForm = () => {
@@ -7,10 +10,16 @@ const SAC = () => {
         id="formulario"
         className="grid grid-cols-2 space-x-4 space-y-4"
         name="formulario"
-        action="https://www.refrigerantesconvencao.com.br/wp-content/themes/refrigerantes/forms/form-sac.php"
-        method="post"
-        encType="multipart/form-data"
+        action={link}
+        method="POST"
       >
+        <input type="hidden" name="_captcha" value="false" />
+        <input
+          type="hidden"
+          name="_next"
+          value="https://guaranaconvencaorj.com.br"
+        />
+
         {/* nome */}
         <div className="col-span-2 md:col-span-1">
           <label className="block text-sm font-medium">Nome *</label>
