@@ -168,7 +168,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="/novo/cliente"
+                  href={links.whatsapp}
                   className="hover:text-green-200 transition-colors"
                 >
                   Cadastro de Cliente

@@ -1,15 +1,59 @@
 import convencaoCaminhao from "../../assets/convencao-caminhao.jpg";
 
+import sheets from "../../constants/sheets";
+
 const WorkWithUs = () => {
+  const submit = async (data = {}) => {
+    const form = document.getElementById("formulario");
+
+    try {
+      const reader = new FileReader();
+      reader.onload = async () => {
+        const base64 = reader.result.split(",")[1];
+
+        const formData = new FormData();
+        formData.append("nome", data.nome);
+        formData.append("tel_fixo", data.tel_fixo);
+        formData.append("tel_cel", data.tel_cel);
+        formData.append("email", data.email);
+        formData.append("estado", data.estado);
+        formData.append("cidade", data.cidade);
+        formData.append("mensagem", data.mensagem);
+        formData.append("filename", data.curriculo.name);
+        formData.append("filetype", data.curriculo.type);
+        formData.append("filedata", base64);
+
+        const res = await fetch(sheets.workWithUs, {
+          method: "POST",
+          body: formData,
+        });
+
+        const text = await res.text();
+        alert(text);
+
+        form.reset();
+      };
+
+      reader.readAsDataURL(data.curriculo);
+    } catch (error) {
+      console.log(error.message || error);
+      alert("Ocorreu um erro ao enviar o formulário!");
+    }
+  };
+
   const renderForm = () => {
     return (
       <form
         id="formulario"
         className="grid grid-cols-2 space-x-4 space-y-4"
         name="formulario"
-        action="https://www.refrigerantesconvencao.com.br/wp-content/themes/refrigerantes/forms/form-trabalhe-conosco.php"
-        method="post"
-        encType="multipart/form-data"
+        onSubmit={(e) => {
+          e.preventDefault();
+
+          const form = e.target;
+          const data = Object.fromEntries(new FormData(form).entries());
+          submit(data);
+        }}
       >
         {/* nome */}
         <div className="col-span-2 md:col-span-1">
@@ -33,7 +77,7 @@ const WorkWithUs = () => {
             name="tel_fixo"
             type="tel"
             placeholder="Digite seu telefone fixo"
-            maxlength="15"
+            maxLength="15"
           />
         </div>
 
@@ -46,7 +90,7 @@ const WorkWithUs = () => {
             name="tel_cel"
             type="tel"
             placeholder="Digite seu telefone celular"
-            maxlength="15"
+            maxLength="15"
           />
         </div>
 
@@ -89,14 +133,15 @@ const WorkWithUs = () => {
           />
         </div>
 
-        {/* file */}
+        {/* curriculo */}
         <div className="col-span-2">
           <label className="block text-sm font-medium">Currículo</label>
           <input
-            id="file"
+            id="curriculo"
             className="mt-1 w-full border border-gray-300 rounded-md p-2"
-            name="file"
+            name="curriculo"
             type="file"
+            accept=".pdf"
             placeholder="Anexe seu currículo"
           />
         </div>
@@ -112,7 +157,7 @@ const WorkWithUs = () => {
         </div>
 
         {/* aceito */}
-        <div class="col-span-2 flex items-start">
+        <div className="col-span-2 flex items-start">
           <input id="aceito" name="aceito" type="checkbox" className="m-2" />
 
           <label>

@@ -18,7 +18,7 @@ const Contact = () => {
         </div>
 
         {/* Contact Channels */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 gap-8 mb-16">
           {contactChannels.map((channel, index) => (
             <div
               key={index}

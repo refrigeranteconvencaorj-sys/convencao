@@ -33,7 +33,7 @@ const SAC = () => {
             name="tel_fixo"
             type="tel"
             placeholder="Digite seu telefone fixo"
-            maxlength="15"
+            maxLength="15"
           />
         </div>
 
@@ -46,7 +46,7 @@ const SAC = () => {
             name="tel_cel"
             type="tel"
             placeholder="Digite seu telefone celular"
-            maxlength="15"
+            maxLength="15"
           />
         </div>
 
@@ -100,7 +100,7 @@ const SAC = () => {
         </div>
 
         {/* aceito */}
-        <div class="col-span-2 flex items-start">
+        <div className="col-span-2 flex items-start">
           <input id="aceito" name="aceito" type="checkbox" className="m-2" />
 
           <label>

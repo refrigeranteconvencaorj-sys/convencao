@@ -1,6 +1,8 @@
 import React from "react";
 
-import { MessageCircle, Users, UserPlus } from "lucide-react";
+import { MessageCircle, Users, UserPlus, AlertOctagon } from "lucide-react";
+
+import links from "./links"
 
 export const contactChannels = [
   {
@@ -13,6 +15,14 @@ export const contactChannels = [
     buttonColor: "bg-primary hover:bg-green-800",
   },
   {
+    link: "/atendimento/denuncia",
+    icon: <AlertOctagon className="w-12 h-12 mx-auto md:mx-0" />,
+    title: "Denuncie",
+    description: "Tem algo a reportar ou denunciar, denuncie!",
+    buttonText: "Denunciar",
+    buttonColor: "bg-primary hover:bg-green-800",
+  },
+  {
     link: "/atendimento/trabalhe-conosco",
     icon: <Users className="w-12 h-12 mx-auto md:mx-0" />,
     title: "Trabalhe Conosco",
@@ -22,7 +32,7 @@ export const contactChannels = [
     buttonColor: "bg-primary hover:bg-green-800",
   },
   {
-    link: "/novo/cliente",
+    link: links.whatsapp,
     icon: <UserPlus className="w-12 h-12 mx-auto md:mx-0" />,
     title: "Seja um Cliente",
     description:
