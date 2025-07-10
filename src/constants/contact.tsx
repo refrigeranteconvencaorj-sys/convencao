@@ -26,7 +26,7 @@ export const contactChannels = [
     icon: <UserPlus className="w-12 h-12 mx-auto md:mx-0" />,
     title: "Seja um Cliente",
     description:
-      "Deseja se tornar um parceiro ou revender nossos produtos? Preencha o formulário e nossa equipe entrará em contato.",
+      "Fale com a gente agora mesmo pelo WhatsApp.",
     buttonText: "Quero ser Cliente",
     buttonColor: "bg-primary hover:bg-green-800",
   },
