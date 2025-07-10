@@ -44,6 +44,8 @@ const FAQ = () => {
             </div>
           ))}
         </div>
+
+        <span>Possui outras dúvidas? sac@convencaorj.ind.br</span>
       </div>
 
       <div className="container mx-auto min-h-screen px-6 md:py-5 md:px-10">
