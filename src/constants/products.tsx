@@ -14,6 +14,7 @@ import refrigeranteCola from "../assets/produtos/refrigerante-cola.png";
 
 import especialChinotto from "../assets/produtos/especial-chinotto.png";
 import especialEnergéticoMSX from "../assets/produtos/especial-energético-msx.png";
+import especialEnergético2LMSX from "../assets/produtos/energetico_2L.png";
 
 export const productCategories = [
   {
@@ -154,6 +155,24 @@ export const productCategories = [
         description:
           "Bebida sem conservantes e funcional, desenvolvida com ingredientes estimulantes e termogênicos para dar um up na sua energia. Temos a quantidade ideal para cada ocasião. MSX, liberte seu instinto",
         image: especialEnergéticoMSX,
+        sizes: ["269ml", "2 litros"],
+        energyValue: ["89", "178", "9%"],
+        carbohydrates: ["7", "14", "5"],
+        totalSugars: ["7g", "14g", ""],
+        addedSugars: ["7g", "14g", "28"],
+        sodium: ["14mg", "38mg", "2"],
+        vitaminaB2: ["0,48mg", "1mg", "100%"],
+        vitaminaB3: ["7mg", "13mg", "100%"],
+        vitaminaB5: ["2mg", "4mg", "100%"],
+        vitaminaB6: ["0.52mg", "1mg", "100%"],
+        vitaminaB12: ["0.50mgc", "1mgc", "100%"],
+      },
+       {
+        name: "msx-convencao_2L",
+        label: "Energético MSX 2L",
+        description:
+          "Bebida sem conservantes e funcional, desenvolvida com ingredientes estimulantes e termogênicos para dar um up na sua energia. Temos a quantidade ideal para cada ocasião. MSX, liberte seu instinto",
+        image: especialEnergético2LMSX,
         sizes: ["269ml", "2 litros"],
         energyValue: ["89", "178", "9%"],
         carbohydrates: ["7", "14", "5"],
