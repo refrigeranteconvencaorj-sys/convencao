@@ -3,13 +3,13 @@ import React from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
-import Customer from "../../components/new/Customer";
+import Report from "../../components/service/Report";
 
 const Page = () => {
   return (
     <div className="min-h-screen">
       <Header />
-      <Customer />
+      <Report />
       <Footer />
     </div>
   );

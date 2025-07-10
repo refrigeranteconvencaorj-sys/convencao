@@ -17,10 +17,9 @@ import Terms from "./pages/Terms";
 
 import FAQ from "./pages/atendimento/FAQ";
 import SAC from "./pages/atendimento/SAC";
+import Report from "./pages/atendimento/Report";
 import WorkWithUs from "./pages/atendimento/WorkWithUs";
 import WhereFind from "./pages/atendimento/WhereFind";
-
-import Customer from "./pages/novo/Customer";
 
 function App() {
   return (
@@ -30,8 +29,8 @@ function App() {
         <Route path="/atendimento/trabalhe-conosco" element={<WorkWithUs />} />
         <Route path="/atendimento/faq" element={<FAQ />} />
         <Route path="/atendimento/sac" element={<SAC />} />
+        <Route path="/atendimento/denuncia" element={<Report />} />
         <Route path="/atendimento/onde-encontrar" element={<WhereFind />} />
-        <Route path="/novo/cliente" element={<Customer />} />
         <Route path="/produtos/:category/:id" element={<Product />} />
         <Route path="/saudabilidade" element={<Healthiness />} />
         <Route path="/visite-nossa-fabrica" element={<VisitFactory />} />
