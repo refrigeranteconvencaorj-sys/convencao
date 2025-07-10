@@ -98,19 +98,6 @@ const WorkWithUs = () => {
           />
         </div>
 
-        {/* curriculo */}
-        <div className="col-span-2">
-          <label className="block text-sm font-medium">Currículo</label>
-          <input
-            id="curriculo"
-            className="mt-1 w-full border border-gray-300 rounded-md p-2"
-            name="curriculo"
-            type="file"
-            accept=".pdf"
-            placeholder="Anexe seu currículo"
-          />
-        </div>
-
         {/* mensagem */}
         <div className="col-span-2">
           <label className="block text-sm font-medium">Mensagem</label>
