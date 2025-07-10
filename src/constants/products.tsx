@@ -14,7 +14,7 @@ import refrigeranteCola from "../assets/produtos/refrigerante-cola.png";
 
 import especialChinotto from "../assets/produtos/especial-chinotto.png";
 import especialEnergéticoMSX from "../assets/produtos/especial-energético-msx.png";
-import especialEnergético2LMSX from "../assets/produtos/energetico_2L.png";
+import especialEnergético2LMSX from "../assets/produtos/especial-energetico-2l.png";
 
 export const productCategories = [
   {
