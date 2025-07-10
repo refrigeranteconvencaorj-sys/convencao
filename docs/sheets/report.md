@@ -2,29 +2,38 @@
 
 1- Crie uma planílha chamada 'convencao-denuncias'
 
-2- Adicione o app script
+2- Adicione o app script com o seguinte código
 ```js
+function doGet(e) {
+  return ContentService.createTextOutput("OK!");
+}
+
 function doPost(e) {
   const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+
   const data = JSON.parse(e.postData.contents);
   sheet.appendRow([new Date(), data.mensagem]);
-  return ContentService.createTextOutput("OK");
+
+  const result = JSON.stringify({ message: "Done" })
+  return ContentService.createTextOutput(result).setMimeType(ContentService.MimeType.JSON);
 }
 ```
 
 3- Implante como App Web
 
-```yml
-Descrição:
+```bash
+# Descrição
 - Canal de denúncias
 
-Executar como:
+# Executar como:
 - eu mesmo
 
-Quem pode acessar:
+# Quem pode acessar:
 - Qualquer pessoa
 ```
 
-4- Salve o link da planílha
+4- Salve o link da planílha, parecido com o abaixo 
 
 https://script.google.com/macros/s/AKfycbxcnTMb_UVRNax6JLMmJ-J47b9OMXvstoVLPKOm7bklZGFfxEtYAN2PyueBNvMGNHyZ/exec
+
+5- Altere o arquivo [AQUI](../../src/constants/sheets.ts)
