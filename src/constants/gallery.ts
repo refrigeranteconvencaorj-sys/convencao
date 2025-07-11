@@ -1,3 +1,4 @@
+import fabrica100 from "../assets/fabrica/fabrica100.jpg";
 import fabrica4 from "../assets/fabrica/4.jpg";
 import fabrica5 from "../assets/fabrica/5.jpg";
 import fabrica6 from "../assets/fabrica/6.jpg";
@@ -8,6 +9,7 @@ import fabrica10 from "../assets/fabrica/10.jpg";
 import fabrica11 from "../assets/fabrica/11.jpg";
 
 export const images = [
+  fabrica100
   fabrica4,
   fabrica5,
   fabrica6,
