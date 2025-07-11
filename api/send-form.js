@@ -1,4 +1,4 @@
-import nodemailer from "nodemailer";
+import { createTransport } from "nodemailer";
 import formidable from "formidable";
 
 export const config = {
@@ -18,10 +18,31 @@ export default async function handler(req, res) {
     return res.status(500).json({ message: "E-mail de destino não informado", env: process.env });
   }
 
+  const SMTP_HOST = process.env.SMTP_HOST
+  const SMTP_PORT = process.env.SMTP_PORT
   const MAIL_USER = process.env.MAIL_USER
   const MAIL_PASS = process.env.MAIL_PASS
-  if (!MAIL_USER || !MAIL_PASS) {
+  if (!SMTP_HOST || !SMTP_PORT || !MAIL_USER || !MAIL_PASS) {
     return res.status(500).json({ message: "Dados do e-mail de envio não informados" });
+  }
+
+  const transporter = createTransport({
+    service: "gmail",
+    host: String(SMTP_HOST),
+    port: Number(SMTP_PORT),
+    secure: true,
+    auth: {
+      user: MAIL_USER,
+      pass: MAIL_PASS,
+    },
+    tls: {
+      rejectUnauthorized: false,
+    },
+  });
+
+  const verify = transporter.verify()
+  if (!verify) {
+    return res.status(500).json({ message: "Erro ao conectar ao SMTP" });
   }
 
   try {
@@ -32,22 +53,31 @@ export default async function handler(req, res) {
         return res.status(500).json({ error: "Erro no upload" });
       }
 
-      const transporter = nodemailer.createTransport({
-        service: "gmail",
-        auth: {
-          user: MAIL_USER,
-          pass: MAIL_PASS,
-        },
-      });
-
-      const { nome, email, mensagem } = fields;
+      const {
+        nome
+        , tel_fixo
+        , tel_cel
+        , email
+        , estado
+        , cidade
+        , mensagem
+      } = fields;
       const file = files.curriculo;
 
+      const text = `
+        Nome: ${nome}
+        \n Telefone Fixo: ${tel_fixo}
+        \n Telefone Celular: ${tel_cel}
+        \n E-mail: ${email}
+        \n UF: ${estado}
+        \n Cidade: ${cidade}
+        \n Mensagem: ${mensagem}
+      `
       const mailOptions = {
-        from: email,
+        from: MAIL_USER,
         to,
         subject: `Nova candidatura: ${nome}`,
-        text: mensagem,
+        text,
         attachments: [
           {
             filename: file.originalFilename,
