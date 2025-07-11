@@ -86,8 +86,10 @@ export default async function handler(req, res) {
         ],
       };
 
-      transporter.sendMail(mailOptions);
-      res.status(200).json({ message: "Enviado!" });
+      console.log(`[SEND]: Enviando e-mail para de '${MAIL_USER}' para '${to}'`)
+      const result = await transporter.sendMail(mailOptions);
+      console.log(result)
+      res.status(200).json({ message: "Enviado!", mailOptions });
     });
   } catch (error) {
     console.error(error);
