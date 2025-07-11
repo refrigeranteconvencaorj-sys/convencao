@@ -5,7 +5,7 @@ export default {
   whatsapp: "https://api.whatsapp.com/send/?phone=5521992201495&text=Ol%C3%A1%21+%EF%BF%BD+Bem-vindo+%C3%A0+Refrigerantes+Conven%C3%A7%C3%A3o+.+Em+que+posso+te+ajudar%3F&type=phone_number&app_absent=0",
   forms: {
     sac: "sac@convencaorj.ind.br",
-    report: "sac@convencaorj.ind.br",
+    report: "mneves@convencaorj.ind.br",
     work: "rhselectrio@gmail.com",
   }
 };
