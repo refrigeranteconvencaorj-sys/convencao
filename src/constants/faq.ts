@@ -4,12 +4,10 @@ export const FAQ_DATA = [
   {
     title: "Quero ser cliente/revendedor, como faço?",
     content: [
-      "Preencha o formulário que a nossa equipe entrará em contato",
+      "Clique no link e fale conosco pelo WhatsApp",
       { href: links.whatsapp, label: "Seja cliente" },
       "",
-      "Ou se preferir, pode ligar ou mandar Whatsapp nos números:",
-      "SP: 011 4441-6300",
-      "RJ: 021 3526-3900",
+      
     ],
   },
   {
