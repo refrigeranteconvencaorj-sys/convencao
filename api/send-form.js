@@ -15,7 +15,7 @@ export default async function handler(req, res) {
 
   const to = process.env.MAIL_WORK_TO
   if (!to) {
-    return res.status(500).json({ message: "E-mail de destino não informado" });
+    return res.status(500).json({ message: "E-mail de destino não informado", env: process.env });
   }
 
   const MAIL_USER = process.env.MAIL_USER
