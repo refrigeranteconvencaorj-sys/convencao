@@ -1,7 +1,4 @@
 import convencaoCaminhao from "../../assets/convencao-caminhao.jpg";
-import links from "../../constants/links";
-
-const link = `https://formsubmit.co/${links.forms.work}`;
 
 const WorkWithUs = () => {
   const renderForm = () => {
@@ -10,16 +7,25 @@ const WorkWithUs = () => {
         id="formulario"
         className="grid grid-cols-2 space-x-4 space-y-4"
         name="formulario"
-        action={link}
-        method="POST"
-      >
-        <input type="hidden" name="_captcha" value="false" />
-        <input
-          type="hidden"
-          name="_next"
-          value="https://guaranaconvencaorj.com.br"
-        />
+        onSubmit={(e) => {
+          e.preventDefault();
 
+          const formData = new FormData(e.target);
+
+          fetch("/api/send-form", {
+            method: "POST",
+            body: formData,
+          }).then((res) => {
+            console.log(res);
+            if (!res.ok) {
+              alert("Erro ao enviar.");
+              return;
+            }
+
+            alert("Enviado com sucesso!");
+          });
+        }}
+      >
         {/* nome */}
         <div className="col-span-2 md:col-span-1">
           <label className="block text-sm font-medium">Nome *</label>
@@ -95,6 +101,19 @@ const WorkWithUs = () => {
             name="cidade"
             type="text"
             placeholder="Digite sua cidade"
+          />
+        </div>
+
+        {/* curriculo */}
+        <div className="col-span-2">
+          <label className="block text-sm font-medium">Currículo</label>
+          <input
+            id="curriculo"
+            className="mt-1 w-full border border-gray-300 rounded-md p-2"
+            name="curriculo"
+            type="file"
+            accept=".pdf"
+            placeholder="Anexe seu currículo"
           />
         </div>
 
