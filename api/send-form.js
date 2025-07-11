@@ -65,15 +65,15 @@ export default async function handler(req, res) {
       } = fields;
       const file = files.curriculo;
 
-      const text = `
-        Nome: ${nome}
-        \n Telefone Fixo: ${tel_fixo}
-        \n Telefone Celular: ${tel_cel}
-        \n E-mail: ${email}
-        \n UF: ${estado}
-        \n Cidade: ${cidade}
-        \n Mensagem: ${mensagem}
-      `
+      let text = '';
+      text += '\nNome: ${nome}';
+      text += '\nTelefone Fixo: ${tel_fixo}';
+      text += '\nTelefone Celular: ${tel_cel}';
+      text += '\nE-mail: ${email}';
+      text += '\nUF: ${estado}';
+      text += '\nCidade: ${cidade}';
+      text += '\n Mensagem: ${mensagem}';
+
       const mailOptions = {
         from: MAIL_USER,
         to,
@@ -90,7 +90,7 @@ export default async function handler(req, res) {
       console.log(`[SEND]: Enviando e-mail para de '${MAIL_USER}' para '${to}'`)
       const result = await transporter.sendMail(mailOptions);
       console.log(result)
-      res.status(200).json({ message: "Enviado!", mailOptions });
+      res.status(200).json({ message: "Enviado!", result, mailOptions, files, fields, file });
     });
   } catch (error) {
     console.error(error, objTransporter);
