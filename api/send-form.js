@@ -22,15 +22,16 @@ export default async function handler(req, res) {
   const MAIL_PORT = process.env.MAIL_PORT
   const MAIL_USER = process.env.MAIL_USER
   const MAIL_PASS = process.env.MAIL_PASS
+  const MAIL_SECURE = process.env.MAIL_SECURE
   if (!MAIL_HOST || !MAIL_PORT || !MAIL_USER || !MAIL_PASS) {
     return res.status(500).json({ message: "Dados do e-mail de envio não informados" });
   }
 
-  const transporter = createTransport({
+  const objTransporter = {
     service: "gmail",
     host: String(MAIL_HOST),
     port: Number(MAIL_PORT),
-    secure: true,
+    secure: MAIL_SECURE == "true",
     auth: {
       user: MAIL_USER,
       pass: MAIL_PASS,
@@ -38,11 +39,12 @@ export default async function handler(req, res) {
     tls: {
       rejectUnauthorized: false,
     },
-  });
+  }
+  const transporter = createTransport(objTransporter);
 
-  const verify = transporter.verify()
+  const verify = await transporter.verify()
   if (!verify) {
-    return res.status(500).json({ message: "Erro ao conectar ao SMTP" });
+    return res.status(500).json({ message: "Erro ao conectar ao SMTP", objTransporter });
   }
 
   try {
