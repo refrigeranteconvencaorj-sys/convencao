@@ -28,7 +28,6 @@ export default async function handler(req, res) {
   }
 
   const objTransporter = {
-    service: "gmail",
     host: String(MAIL_HOST),
     port: Number(MAIL_PORT),
     secure: MAIL_SECURE == "true",
