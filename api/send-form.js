@@ -40,14 +40,14 @@ export default async function handler(req, res) {
       rejectUnauthorized: false,
     },
   }
-  const transporter = createTransport(objTransporter);
-
-  const verify = await transporter.verify()
-  if (!verify) {
-    return res.status(500).json({ message: "Erro ao conectar ao SMTP", objTransporter });
-  }
-
   try {
+    const transporter = createTransport(objTransporter);
+
+    const verify = await transporter.verify()
+    if (!verify) {
+      return res.status(500).json({ message: "Erro ao conectar ao SMTP", objTransporter });
+    }
+
     const form = formidable({ multiples: true, keepExtensions: true });
 
     form.parse(req, async (err, fields, files) => {
@@ -94,7 +94,7 @@ export default async function handler(req, res) {
       res.status(200).json({ message: "Enviado!", mailOptions });
     });
   } catch (error) {
-    console.error(error);
-    res.status(500).json({ error: error?.message || "Erro ao enviar e-mail" });
+    console.error(error, objTransporter);
+    res.status(500).json({ error: error?.message || "Erro ao enviar e-mail", objTransporter });
   }
 }
