@@ -22,9 +22,8 @@ export const FAQ_DATA = [
   {
     title: "Possuo apenas CPF, posso realizar o cadastro?",
     content: [
-      "Não, no momento apenas para pessoa jurídica com CNPJ.",
-      "Temos lojas de fábrica para atender os consumidores finais com CPF",
-      { href: "/atendimento/onde-encontrar", label: "Onde Encontrar" },
+      "Sim, os cadastros são feitos para ambos: CNPJ E CPF.",
+            { href: "/atendimento/onde-encontrar", label: "Onde Encontrar" },
     ],
   },
   {
