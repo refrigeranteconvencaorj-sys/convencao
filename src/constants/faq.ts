@@ -17,7 +17,7 @@ export const FAQ_DATA = [
   },
   {
     title: "Qual o valor do pedido mínimo?",
-    content: ["R$ 220,00"],
+    content: ["R$ 100,00"],
   },
   {
     title: "Possuo apenas CPF, posso realizar o cadastro?",

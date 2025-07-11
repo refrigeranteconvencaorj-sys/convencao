@@ -143,7 +143,7 @@ const Footer = () => {
 
               <li>
                 <a
-                  href="/#marcas"
+                  href="/produtos/especial/chinotto"
                   className="hover:text-green-200 transition-colors"
                 >
                   Chinotto
@@ -152,7 +152,7 @@ const Footer = () => {
 
               <li>
                 <a
-                  href="/#marcas"
+                  href="/produtos/especial/msx-convencao"
                   className="hover:text-green-200 transition-colors"
                 >
                   Energético MSX
