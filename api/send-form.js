@@ -15,7 +15,7 @@ export default async function handler(req, res) {
 
   const to = process.env.MAIL_WORK_TO
   if (!to) {
-    return res.status(500).json({ message: "E-mail de destino não informado", env: process.env });
+    return res.status(500).json({ message: "E-mail de destino não informado" });
   }
 
   const MAIL_HOST = process.env.MAIL_HOST
@@ -44,13 +44,17 @@ export default async function handler(req, res) {
 
     const verify = await transporter.verify()
     if (!verify) {
-      return res.status(500).json({ message: "Erro ao conectar ao SMTP", objTransporter });
+      console.error("Erro ao conectar ao SMTP")
+      console.error(objTransporter)
+      return res.status(500).json({ message: "Erro ao conectar ao SMTP" });
     }
 
     const form = formidable({ multiples: true, keepExtensions: true });
 
     form.parse(req, async (err, fields, files) => {
       if (err) {
+        console.error("Erro ao fazer parse do formulário")
+        console.error(err)
         return res.status(500).json({ error: "Erro no upload" });
       }
 
@@ -79,12 +83,13 @@ export default async function handler(req, res) {
       };
 
       console.log(`[SEND]: Enviando e-mail para de '${MAIL_USER}' para '${to}'`)
-      const result = await transporter.sendMail(mailOptions);
-      console.log(result)
-      res.status(200).json({ message: "Enviado!", result, mailOptions, files, fields, file });
+      await transporter.sendMail(mailOptions);
+
+      res.status(200).json({ message: "Enviado!" });
     });
   } catch (error) {
+    console.error("Erro ao enviar e-mail do formulário")
     console.error(error, objTransporter);
-    res.status(500).json({ error: error?.message || "Erro ao enviar e-mail", objTransporter });
+    res.status(500).json({ error: error?.message || "Erro ao enviar e-mail" });
   }
 }
