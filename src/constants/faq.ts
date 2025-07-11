@@ -32,7 +32,7 @@ export const FAQ_DATA = [
   },
   {
     title: "Quais são as formas de pagamento?",
-    content: ["À vista/boleto/cheque (sujeito a análise de crédito)."],
+    content: ["PIX, DINHEIRO, DÉBITO E CRÉDITO."],
   },
   {
     title: "Quais são as regiões de distribuição?",
