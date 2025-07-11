@@ -1,6 +1,9 @@
+import React from "react";
 import convencaoCaminhao from "../../assets/convencao-caminhao.jpg";
 
 const WorkWithUs = () => {
+  const [loading, setLoading] = React.useState(false);
+
   const renderForm = () => {
     return (
       <form
@@ -11,18 +14,20 @@ const WorkWithUs = () => {
           e.preventDefault();
 
           const formData = new FormData(e.target);
+          setLoading(true);
 
           fetch("/api/send-form", {
             method: "POST",
             body: formData,
           }).then((res) => {
-            console.log(res);
+            setLoading(false);
             if (!res.ok) {
               alert("Erro ao enviar.");
               return;
             }
 
             alert("Enviado com sucesso!");
+            e.reset();
           });
         }}
       >
@@ -140,9 +145,10 @@ const WorkWithUs = () => {
 
         <button
           type="submit"
+          disabled={loading}
           className="col-span-2 md:col-span-1 font-medium py-2 px-4 rounded-md transition bg-primary text-white hover:bg-secondary"
         >
-          Enviar
+          {loading ? "Enviando..." : "Enviar"}
         </button>
       </form>
     );
