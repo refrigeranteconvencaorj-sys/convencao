@@ -120,8 +120,7 @@ const Footer = () => {
               <div className="flex items-center justify-center md:justify-start space-x-3">
                 <MapPin size={16} />
                 <span>
-                  Av. Brasil, 44148 - Distrito Industrial Campo Grande
-                  <a> - Loteamento 36939 QL3</a>
+                  Av. Brasil, 44148 - Distrito Industrial Campo Grande - Loteamento 36939 QL3
                   <br />
                   Rio de Janeiro - RJ, 23078-002
                 </span>
