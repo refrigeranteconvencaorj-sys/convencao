@@ -1,4 +1,4 @@
-import links from "./links" 
+import links from "./links"
 
 export const FAQ_DATA = [
   {
@@ -7,7 +7,6 @@ export const FAQ_DATA = [
       "Clique no link e fale conosco pelo WhatsApp",
       { href: links.whatsapp, label: "Seja cliente" },
       "",
-      
     ],
   },
   {
