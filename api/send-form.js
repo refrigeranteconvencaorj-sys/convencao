@@ -18,18 +18,18 @@ export default async function handler(req, res) {
     return res.status(500).json({ message: "E-mail de destino não informado", env: process.env });
   }
 
-  const SMTP_HOST = process.env.SMTP_HOST
-  const SMTP_PORT = process.env.SMTP_PORT
+  const MAIL_HOST = process.env.MAIL_HOST
+  const MAIL_PORT = process.env.MAIL_PORT
   const MAIL_USER = process.env.MAIL_USER
   const MAIL_PASS = process.env.MAIL_PASS
-  if (!SMTP_HOST || !SMTP_PORT || !MAIL_USER || !MAIL_PASS) {
+  if (!MAIL_HOST || !MAIL_PORT || !MAIL_USER || !MAIL_PASS) {
     return res.status(500).json({ message: "Dados do e-mail de envio não informados" });
   }
 
   const transporter = createTransport({
     service: "gmail",
-    host: String(SMTP_HOST),
-    port: Number(SMTP_PORT),
+    host: String(MAIL_HOST),
+    port: Number(MAIL_PORT),
     secure: true,
     auth: {
       user: MAIL_USER,
