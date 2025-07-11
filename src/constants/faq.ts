@@ -5,7 +5,7 @@ export const FAQ_DATA = [
     title: "Quero ser cliente/revendedor, como faço?",
     content: [
       "Clique no link e fale conosco pelo WhatsApp",
-      { href: links.whatsapp, label: "Seja cliente" },
+      { href: links.whatsapp, label: "Falar pelo WhatsApp" },
       "",
     ],
   },
