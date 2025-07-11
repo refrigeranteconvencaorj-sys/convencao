@@ -25,7 +25,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const form = new formidable.IncomingForm({ keepExtensions: true });
+    const form = formidable({ multiples: true, keepExtensions: true });
 
     form.parse(req, async (err, fields, files) => {
       if (err) {
