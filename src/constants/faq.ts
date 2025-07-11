@@ -6,7 +6,6 @@ export const FAQ_DATA = [
     content: [
       "Clique no link e fale conosco pelo WhatsApp",
       { href: links.whatsapp, label: "Falar pelo WhatsApp" },
-      "",
     ],
   },
   {
@@ -23,7 +22,7 @@ export const FAQ_DATA = [
     title: "Possuo apenas CPF, posso realizar o cadastro?",
     content: [
       "Sim, os cadastros são feitos para ambos: CNPJ E CPF.",
-            { href: "/atendimento/onde-encontrar", label: "Onde Encontrar" },
+      { href: "/atendimento/onde-encontrar", label: "Onde Encontrar" },
     ],
   },
   {
