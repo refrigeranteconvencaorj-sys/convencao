@@ -18,7 +18,7 @@ export const contactChannels = [
     link: "/atendimento/denuncia",
     icon: <AlertOctagon className="w-12 h-12 mx-auto md:mx-0" />,
     title: "Denuncie",
-    description: "Tem algo a reportar ou denunciar, denuncie!",
+    description: "Sua voz importa! Tem algo a relatar? Faça sua denúncia",
     buttonText: "Denunciar",
     buttonColor: "bg-primary hover:bg-green-800",
   },
