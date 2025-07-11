@@ -54,30 +54,21 @@ export default async function handler(req, res) {
         return res.status(500).json({ error: "Erro no upload" });
       }
 
-      const {
-        nome
-        , tel_fixo
-        , tel_cel
-        , email
-        , estado
-        , cidade
-        , mensagem
-      } = fields;
-      const file = files.curriculo;
-
       let text = '';
-      text += '\nNome: ${nome}';
-      text += '\nTelefone Fixo: ${tel_fixo}';
-      text += '\nTelefone Celular: ${tel_cel}';
-      text += '\nE-mail: ${email}';
-      text += '\nUF: ${estado}';
-      text += '\nCidade: ${cidade}';
-      text += '\n Mensagem: ${mensagem}';
+      text += `\nNome: ${fields.nome}`;
+      text += `\nTelefone Fixo: ${fields.tel_fixo}`;
+      text += `\nTelefone Celular: ${fields.tel_cel}`;
+      text += `\nE-mail: ${fields.email}`;
+      text += `\nUF: ${fields.estado}`;
+      text += `\nCidade: ${fields.cidade}`;
+      text += `\nMensagem: ${fields.mensagem}`;
+
+      const file = files.curriculo[0];
 
       const mailOptions = {
         from: MAIL_USER,
         to,
-        subject: `Nova candidatura: ${nome}`,
+        subject: `Nova candidatura: ${fields.nome}`,
         text,
         attachments: [
           {
