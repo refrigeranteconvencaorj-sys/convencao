@@ -61,7 +61,7 @@ export const FAQ_DATA = [
   {
     title: "Como posso enviar o meu currículo para Refrigerantes Convenção?",
     content: [
-      "Pode enviar o currículo em nosso site na sessão Atendimento - Trabalhe Conosco",
+      "Pode enviar o currículo em nosso site na sessão Atendimento",
       { href: "/atendimento/trabalhe-conosco", label: "Trabalhe Conosco" },
       "Boa sorte!",
     ],
