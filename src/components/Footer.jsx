@@ -291,6 +291,10 @@ const Footer = () => {
             <a href="/termos-de-uso" className="text-sm">
               Termos de Uso
             </a>
+            
+            <a href="www.simplessolucao.com.br" className="text-sm">
+              Simples Solução TI
+            </a>
 
             <a href="/politica-de-privacidade" className="text-sm">
               Política de Privacidade
