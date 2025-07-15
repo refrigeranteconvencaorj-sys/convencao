@@ -281,25 +281,33 @@ const Footer = () => {
 
   const sectionCopywritter = () => {
     return (
-      <div className="container mx-auto py-6">
-        <div className="border-t border-white border-opacity-20 pt-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 text-center px-4 md:px-0 space-y-2 md:space-x-10">
-            <a href="/" className="text-sm">
-              Convenção RJ © 2025 Convenção | Todos os direitos reservados.
-            </a>
+<div className="container mx-auto py-6">
+    <div className="border-t border-white border-opacity-20 pt-8">
+      <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] items-center px-4 md:px-0 gap-y-2">
+        <a href="/" className="text-sm justify-self-start md:justify-self-center">
+          Convenção RJ © 2025 Convenção | Todos os direitos reservados.
+        </a>
 
-            <a href="/termos-de-uso" className="text-sm">
-              Termos de Uso
-            </a>
-            
-            <a> Feito por Simples Solução TI </a>
-
-            <a href="/politica-de-privacidade" className="text-sm">
-              Política de Privacidade
-            </a>
-          </div>
+        <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-10 order-last md:order-none">
+          <a href="/termos-de-uso" className="text-sm">
+            Termos de Uso
+          </a>
+          <a href="/politica-de-privacidade" className="text-sm">
+            Política de Privacidade
+          </a>
         </div>
+
+        <a 
+          href="https://simplessolucao.com.br" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="text-xs md:text-sm justify-self-end"
+        >
+          Feito por Simples Solução TI
+        </a>
       </div>
+    </div>
+  </div>
     );
   };
 
