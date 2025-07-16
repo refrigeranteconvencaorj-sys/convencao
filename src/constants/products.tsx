@@ -47,7 +47,7 @@ export const productCategories = [
         carbohydrates: ["", "", ""],
         totalSugars: ["", "", ""],
         addedSugars: ["", "", ""],
-        sodium: ["", "", ""],
+        sodium: ["7,3mg", "", ""],
       },
       {
         name: "frutaina",
