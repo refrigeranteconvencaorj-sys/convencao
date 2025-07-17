@@ -155,7 +155,7 @@ const Footer = () => {
                   href="/produtos/especial/msx-convencao"
                   className="hover:text-green-200 transition-colors"
                 >
-                  Energético MSX
+                  Energético MSX 269 ml
                 </a>
               </li>
             </ul>

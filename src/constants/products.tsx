@@ -151,7 +151,7 @@ export const productCategories = [
     products: [
       {
         name: "msx-convencao",
-        label: "Energético MSX",
+        label: "Energético MSX 269 ml",
         description:
           "Bebida sem conservantes e funcional, desenvolvida com ingredientes estimulantes e termogênicos para dar um up na sua energia. Temos a quantidade ideal para cada ocasião. MSX, liberte seu instinto",
         image: especialEnergéticoMSX,
