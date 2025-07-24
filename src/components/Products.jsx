@@ -55,7 +55,7 @@ const Products = () => {
             <p className="md:text-xl leading-relaxed text-justify">
               Nosso produto mais tradicional e querido! O sabor autêntico do
               guaraná brasileiro que conquistou gerações e continua sendo a
-              escolha da família carioca.
+              escolha da Família Brasileira.
             </p>
 
             <div className="grid md:grid-cols-3 gap-4 md:gap-8 text-black">
@@ -76,7 +76,7 @@ const Products = () => {
               <div className="p-4 md:p-6 rounded-xl bg-white bg-opacity-20">
                 <h4 className="md:text-xl font-bold">Sabor</h4>
                 <p className="text-sm md:text-base">
-                  O gosto que é a cara do carioca
+                  O sabor da Família Brasileira
                 </p>
               </div>
             </div>
