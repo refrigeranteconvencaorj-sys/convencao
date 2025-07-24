@@ -62,34 +62,9 @@ const Terms = () => {
               não possui nenhum conservante em sua composição.
             </p>
           </div>
-
-          <div>
-            <h2 className="text-xl md:text-2xl font-bold">
-              GUARANÁ DA AMAZÔNIA
-            </h2>
-
-            <hr className="my-4 w-50 border-t-6 border-t-[#ff7500]" />
-            <p className="text-base">
-              O Guaraná Convenção é feito com o fruto da Amazônia. Com isso, a
-              Refrigerantes Convenção estimula a agricultura local e oferece um
-              produto com sabor e qualidade desde 1951.
-            </p>
-          </div>
         </div>
 
         <div className="space-y-10">
-          <div>
-            <h2 className="text-xl md:text-2xl font-bold">MENOS AÇÚCAR</h2>
-
-            <hr className="my-4 w-50 border-t-6 border-t-[#ff7500]" />
-
-            <p className="text-base">
-              Reduzimos o açúcar, utilizando alguns ingredientes substitutos
-              conhecidos como edulcorantes naturais e artificiais que mantém o
-              sabor doce, de baixa caloria.
-            </p>
-          </div>
-
           <div>
             <h2 className="text-xl md:text-2xl font-bold">ZERO AÇÚCAR</h2>
 
@@ -100,26 +75,7 @@ const Terms = () => {
               Refrigerantes Convenção tem o Guaraná sem açúcar.
             </p>
           </div>
-==
         </div>
-      </section>
-
-      <section className="px-20 py-30 md:px-50">
-        <h2 className="text-center text-3xl md:text-4xl font-bold mb-6 text-primary">
-          MENSAGEM DO PRESIDENTE
-        </h2>
-
-        <hr className="p-2 w-50 mx-auto border-t-6" />
-
-        <p className="mt-2 text-center text-base">
-          A Refrigerantes Convenção está no mercado desde 1951, buscamos atender
-          da melhor forma os nossos consumidores, garantindo a qualidade e sabor
-          em todos os produtos.
-          <br />
-          Obrigado pela sua confiança! Geraldo Guitti
-          <br />
-          Diretor Presidente
-        </p>
       </section>
     </section>
   );

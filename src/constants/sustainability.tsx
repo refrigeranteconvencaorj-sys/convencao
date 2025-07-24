@@ -17,7 +17,6 @@ export const initiatives = [
       "Tratamento das águas residuárias;",
       "Uso de água de reuso em sanitários e áreas externas;",
       "Não utilização de terra diatomácea para filtração;",
-      "Plantação de eucaliptos em torno da fábrica.",
     ],
   },
   {

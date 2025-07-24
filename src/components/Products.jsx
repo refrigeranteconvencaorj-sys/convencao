@@ -76,7 +76,7 @@ const Products = () => {
               <div className="p-4 md:p-6 rounded-xl bg-white bg-opacity-20">
                 <h4 className="md:text-xl font-bold">Sabor</h4>
                 <p className="text-sm md:text-base">
-                  O sabor da Família Brasileira
+                  O sabor que é a cara da Família Brasileira
                 </p>
               </div>
             </div>
