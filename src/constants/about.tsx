@@ -11,9 +11,9 @@ export const stats = [
   },
   {
     icon: <Users className="w-8 h-8" />,
-    number: "1.200",
+    number: "280",
     label: "Funcionários",
-    description: "Entre as duas empresas",
+    description: "Somente no Rio de Janeiro",
   },
   {
     icon: <Award className="w-8 h-8" />,

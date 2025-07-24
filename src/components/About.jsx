@@ -27,12 +27,9 @@ const About = () => {
               Nossa Origem
             </h3>
             <p className="text-sm md:text-base text-justify text-gray-600 leading-relaxed">
-              A empresa Refrigerantes Convenção foi fundada em Itu, por Primo
-              Schincariol, na década de 30. A origem da marca foi inspirada na
-              Convenção Republicana de Itu de 1873. Em 1951, o Sr. Victorio
-              Guitti e filhos, adquiriram a Refrigerantes Convenção e em 1978,
-              os filhos do Sr. Geraldo: Francisca, Carlos, Geraldo e Vitório,
-              iniciaram suas carreiras na empresa, permanecendo até hoje.
+              A empresa Refrigerantes Convenção foi fundada em Itu, em 1951. A
+              origem da marca foi inspirada na Convenção Republicana de Itu de
+              1873. Em 1983, inauguramos a Fábrica no Rio de Janeiro.
             </p>
           </div>
 
@@ -41,17 +38,16 @@ const About = () => {
               Atualmente
             </h3>
             <p className="text-sm md:text-base text-justify text-gray-600 leading-relaxed">
-              É uma indústria de bebidas que emprega cerca de 1.200 funcionários
-              entre as duas empresas, possui grande portfólio, do qual fazem
-              parte: refrigerantes populares na versão tradicional em PET nos
-              diferentes sabores: guaraná, guaraná zero açúcar, frutaína,
+              É uma indústria de bebidas que emprega cerca de 280 funcionários,
+              possui grande portfólio, do qual fazem parte: refrigerantes em PET
+              nos diferentes sabores: guaraná, guaraná zero açúcar, frutaína,
               laranja, uva, limão, Vitt's, abacaxi e cola, energético MSX e
               bebidas diferenciadas, como o Chinotto, bebida à base de extratos
               vegetais com grande tradição na Itália.
               <br />A Convenção Refrigerantes consolida-se no mercado de bebidas
               com uma das melhores empresas por oferecer uma diversidade de
               produtos para celebrar vários momentos e que sempre buscou em seus
-              70 anos de existência atender as necessidades e hábitos de seus
+              73 anos de existência atender as necessidades e hábitos de seus
               consumidores, aliado a tecnologia, qualidade e respeito.
             </p>
           </div>
