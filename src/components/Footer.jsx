@@ -21,56 +21,6 @@ const Footer = () => {
             className="h-15 md:h-20"
           />
         </div>
-
-        <div className="flex-1">
-          <form
-            id="newsletter"
-            className="grid grid-cols-12 space-y-4 md:space-x-4 md:space-y-0"
-            name="newsletter"
-            action="https://www.refrigerantesconvencao.com.br/wp-content/themes/refrigerantes/forms/form-newsletter.php"
-            method="post"
-            encType="multipart/form-data"
-          >
-            <div className="col-span-12 md:col-span-2">
-              <p className="text-center text-xl font-semibold">
-                Assine a nossa Newsletter
-              </p>
-            </div>
-
-            {/* nome */}
-            <div className="col-span-12 md:col-span-4 flex items-center">
-              <input
-                id="nome"
-                className="w-full border rounded-md p-2 text-black bg-white border-gray-300"
-                name="nome"
-                type="text"
-                required
-                placeholder="Digite seu nome"
-              />
-            </div>
-
-            {/* email */}
-            <div className="col-span-12 md:col-span-4 flex items-center">
-              <input
-                id="email"
-                className="w-full border rounded-md p-2 text-black bg-white border-gray-300"
-                name="email"
-                required
-                type="email"
-                placeholder="Digite seu e-mail"
-              />
-            </div>
-
-            <div className="col-span-12 md:col-span-2 flex items-center">
-              <button
-                type="submit"
-                className="w-full font-medium py-2 px-4 rounded-md transition bg-orange-500 text-white hover:bg-orange-700"
-              >
-                Cadastrar
-              </button>
-            </div>
-          </form>
-        </div>
       </div>
     );
   };
@@ -120,7 +70,8 @@ const Footer = () => {
               <div className="flex items-center justify-center md:justify-start space-x-3">
                 <MapPin size={16} />
                 <span>
-                  Av. Brasil, 44148 - Distrito Industrial Campo Grande - Loteamento 36939 QL3
+                  Av. Brasil, 44148 - Distrito Industrial Campo Grande -
+                  Loteamento 36939 QL3
                   <br />
                   Rio de Janeiro - RJ, 23078-002
                 </span>
@@ -217,14 +168,11 @@ const Footer = () => {
                   className="hover:text-green-200 transition-colors"
                 >
                   (21) 3526-3900
-                 </a>
-
-                        
+                </a>
               </div>
-                            
-                 <a> comercial@convencaorj.ind.br </a>
-                 <a>financeiro.rj@convencao.ind.br </a>
 
+              <a> comercial@convencaorj.ind.br </a>
+              <a>financeiro.rj@convencao.ind.br </a>
             </div>
           </div>
 
@@ -281,33 +229,36 @@ const Footer = () => {
 
   const sectionCopywritter = () => {
     return (
-<div className="container mx-auto py-6">
-    <div className="border-t border-white border-opacity-20 pt-8">
-      <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] items-center px-4 md:px-0 gap-y-2">
-        <a href="/" className="text-sm justify-self-start md:justify-self-center">
-          Convenção RJ © 2025 Convenção | Todos os direitos reservados.
-        </a>
+      <div className="container mx-auto py-6">
+        <div className="border-t border-white border-opacity-20 pt-8">
+          <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] items-center px-4 md:px-0 gap-y-2">
+            <a
+              href="/"
+              className="text-sm justify-self-start md:justify-self-center"
+            >
+              Convenção RJ © 2025 Convenção | Todos os direitos reservados.
+            </a>
 
-        <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-10 order-last md:order-none">
-          <a href="/termos-de-uso" className="text-sm">
-            Termos de Uso
-          </a>
-          <a href="/politica-de-privacidade" className="text-sm">
-            Política de Privacidade
-          </a>
+            <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-10 order-last md:order-none">
+              <a href="/termos-de-uso" className="text-sm">
+                Termos de Uso
+              </a>
+              <a href="/politica-de-privacidade" className="text-sm">
+                Política de Privacidade
+              </a>
+            </div>
+
+            <a
+              href="https://simplessolucao.com.br"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs md:text-sm justify-self-end"
+            >
+              Feito por Simples Solução TI
+            </a>
+          </div>
         </div>
-
-        <a 
-          href="https://simplessolucao.com.br" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="text-xs md:text-sm justify-self-end"
-        >
-          Feito por Simples Solução TI
-        </a>
       </div>
-    </div>
-  </div>
     );
   };
 
