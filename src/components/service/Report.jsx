@@ -1,4 +1,4 @@
-import convencaoCaminhao from "../../assets/convencao-caminhao.jpg";
+import trabalheConosco from "../../assets/trabalhe-conosco.png";
 import links from "../../constants/links";
 
 const link = `https://formsubmit.co/${links.forms.report}`;
@@ -60,7 +60,7 @@ const NewReport = () => {
           </div>
 
           <img
-            src={convencaoCaminhao}
+            src={trabalheConosco}
             className="hidden w-full h-full object-cover rounded-xl shadow border transition-all hover:transform hover:scale-105 hover:shadow-xl md:block"
           />
         </div>

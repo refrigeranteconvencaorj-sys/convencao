@@ -1,4 +1,4 @@
-import convencaoCaminhao from "../../assets/convencao-caminhao.jpg";
+import refrigerantes_convencao from "../../assets/refrigerantes_convencao.jpeg";
 import links from "../../constants/links";
 
 const link = `https://formsubmit.co/${links.forms.sac}`;
@@ -147,7 +147,7 @@ const SAC = () => {
           </div>
 
           <img
-            src={convencaoCaminhao}
+            src={refrigerantes_convencao}
             className="hidden w-full h-full object-cover rounded-xl shadow border transition-all hover:transform hover:scale-105 hover:shadow-xl md:block"
           />
         </div>
