@@ -71,10 +71,8 @@ const Footer = () => {
                 <MapPin size={16} />
                 <span>
                   Av. Brasil, 44148 - Distrito Industrial Campo Grande -
-                  Loteamento 36939 QL3
-                  <br />
-                  Rio de Janeiro - RJ, 23078-002
-                </span>
+                                    <br />
+                                  </span>
               </div>
             </div>
           </div>
