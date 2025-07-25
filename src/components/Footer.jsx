@@ -178,8 +178,7 @@ const Footer = () => {
                 </a>
               </div>
 
-              <a> comercial@convencaorj.ind.br </a>
-              <a>financeiro.rj@convencao.ind.br </a>
+              
             </div>
           </div>
 
