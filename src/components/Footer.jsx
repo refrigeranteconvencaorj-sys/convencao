@@ -171,8 +171,7 @@ const Footer = () => {
               <div className="flex items-center justify-center md:justify-start space-x-3">
                 <SiWhatsapp size={16} className="flex-shrink-0" />
                 <a
-                  href="tel:+552135263900"
-                  className="hover:text-green-200 transition-colors"
+                 
                 >
                   (21) 3526-3900
                 </a>
