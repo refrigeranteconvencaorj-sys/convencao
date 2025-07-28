@@ -169,7 +169,7 @@ const Footer = () => {
 
             <div className="mt-3 flex flex-col gap-3">
               <div className="flex items-center justify-center md:justify-start space-x-3">
-                <SiWhatsapp size={16} className="flex-shrink-0" />
+                
                 <a
                  
                 >
