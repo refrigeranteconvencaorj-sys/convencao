@@ -28,7 +28,7 @@ const Footer = () => {
   const sectionContent = () => {
     return (
       <div className="container mx-auto py-4 md:py-6">
-        <div className="grid md:grid-cols-5 gap-8">
+        <div className="grid md:grid-cols-5 gap-8 px-20">
           {/* INSTITUCIONAL */}
           <div className="col-span-1 text-center md:text-left">
             <h3 className="text-xl font-bold mb-6">INSTITUCIONAL</h3>
@@ -67,12 +67,11 @@ const Footer = () => {
                 <span>28.293.066/0001-36</span>
               </div>
 
-              <div className="flex items-center justify-center md:justify-start space-x-3">
+              <div className="flex justify-center md:justify-start space-x-3">
                 <MapPin size={16} />
                 <span>
-                  Av. Brasil, 44148 - Distrito Industrial Campo Grande 
-                                    <br />
-                                  </span>
+                  Av. Brasil, 44148 - Distrito Industrial Campo Grande
+                </span>
               </div>
             </div>
           </div>
@@ -169,15 +168,8 @@ const Footer = () => {
 
             <div className="mt-3 flex flex-col gap-3">
               <div className="flex items-center justify-center md:justify-start space-x-3">
-                
-                <a
-                 
-                >
-                  (21) 3526-3900
-                </a>
+                <a>(21) 3526-3900</a>
               </div>
-
-              
             </div>
           </div>
 
