@@ -6,7 +6,7 @@ const Terms = () => {
       <img
         src={bannerSaudabilidade}
         alt="Refrigerantes Convenção"
-        className="h-full"
+        className="w-full"
       />
 
       <section className="px-20 py-30 md:px-50">
@@ -43,38 +43,34 @@ const Terms = () => {
         </p>
       </section>
 
-      <section className="px-20 py-30 md:px-50 grid grid-cols-2 space-x-10 bg-primary text-white">
-        <div className="space-y-10">
-          <div>
-            <h2 className="text-xl md:text-2xl font-bold">
-              MENOS SÓDIO E SEM CONSERVANTES
-            </h2>
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-10 px-20 py-30 md:px-50 bg-primary text-white">
+        <div>
+          <h2 className="text-xl md:text-2xl font-bold">
+            MENOS SÓDIO E SEM CONSERVANTES
+          </h2>
 
-            <hr className="my-4 w-50 border-t-6 border-t-[#ff7500]" />
+          <hr className="my-4 w-50 border-t-6 border-t-[#ff7500]" />
 
-            <p className="text-base">
-              A redução do teor de sódio e conservantes estão de acordo com as
-              novas recomendações do Ministério da Saúde e a Associação
-              Brasileira de Indústria de Alimentação (ABIA). A Refrigerantes
-              Convenção está ciente dos desafios da saudabilidade e por isso,
-              reduziu o sódio e a utilização de conservantes no seu portfólio de
-              produtos. O refrigerante Chinotto já é resultado dessa inovação e
-              não possui nenhum conservante em sua composição.
-            </p>
-          </div>
+          <p className="text-base">
+            A redução do teor de sódio e conservantes estão de acordo com as
+            novas recomendações do Ministério da Saúde e a Associação Brasileira
+            de Indústria de Alimentação (ABIA). A Refrigerantes Convenção está
+            ciente dos desafios da saudabilidade e por isso, reduziu o sódio e a
+            utilização de conservantes no seu portfólio de produtos. O
+            refrigerante Chinotto já é resultado dessa inovação e não possui
+            nenhum conservante em sua composição.
+          </p>
         </div>
 
-        <div className="space-y-10">
-          <div>
-            <h2 className="text-xl md:text-2xl font-bold">ZERO AÇÚCAR</h2>
+        <div>
+          <h2 className="text-xl md:text-2xl font-bold">ZERO AÇÚCAR</h2>
 
-            <hr className="my-4 w-50 border-t-6 border-t-[#ff7500]" />
+          <hr className="my-4 w-50 border-t-6 border-t-[#ff7500]" />
 
-            <p className="text-base">
-              Para aqueles que seguem uma dieta ou alguma enfermidade, a
-              Refrigerantes Convenção tem o Guaraná sem açúcar.
-            </p>
-          </div>
+          <p className="text-base">
+            Para aqueles que seguem uma dieta ou alguma enfermidade, a
+            Refrigerantes Convenção tem o Guaraná sem açúcar.
+          </p>
         </div>
       </section>
     </section>
