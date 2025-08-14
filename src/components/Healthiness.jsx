@@ -16,14 +16,14 @@ const Terms = () => {
 
         <hr className="p-2 w-50 mx-auto border-t-6" />
 
-        <p className="mt-2 text-center text-base">
+        <p className="mt-2 text-justify text-base">
           A Refrigerantes Convenção tem um portfólio de produtos que atende
           todas as necessidades de nossos clientes e consumidores. Estamos nos
           atualizando em todos os estudos e pesquisas relacionadas aos
           refrigerantes.
         </p>
 
-        <p className="mt-2 text-center text-base">
+        <p className="mt-2 text-justify text-base">
           Alguns estudos associam a ingestão de bebidas açucaradas com a
           diabetes e obesidade. Pesquisas revelam que o excesso de peso é um
           fator de risco para o diabetes. Consumir muitos alimentos e bebidas
@@ -31,7 +31,7 @@ const Terms = () => {
           consequentemente as chances de adquirir o diabetes tipo 2.
         </p>
 
-        <p className="mt-2 text-center text-base">
+        <p className="mt-2 text-justify text-base">
           O consumo moderado de alimentos e bebidas e a prática regular de
           atividades físicas são maneiras de se manter saudável. Para os
           consumidores que querem reduzir a ingestão de açúcar e calorias, a
