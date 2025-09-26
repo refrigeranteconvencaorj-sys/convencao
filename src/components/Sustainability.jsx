@@ -20,7 +20,7 @@ const Sustainability = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {initiatives.map((initiative, index) => (
             <div
-              key={index}
+              key={index + '_' + initiative.title}
               className={`text-center md:text-left p-8 rounded-2xl space-y-3 transition-all hover:transform hover:scale-105 ${
                 initiative.highlight
                   ? "bg-guarana-gradient text-white shadow-2xl"
@@ -44,8 +44,9 @@ const Sustainability = () => {
               </h3>
 
               <div>
-                {initiative.description.map((item) => (
+                {initiative.description.map((item, idx) => (
                   <p
+                    key={idx + '_' + item.charAt(0)}
                     className={`leading-relaxed text-justify ${
                       initiative.highlight ? "text-white" : "text-gray-600"
                     }`}
@@ -68,7 +69,7 @@ const Sustainability = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {practices.map((practice, index) => (
-              <div key={index} className="text-center group">
+              <div key={index + '_' + practice.title} className="text-center group">
                 <div className="bg-white p-6 rounded-2xl shadow-lg group-hover:shadow-xl transition-all mb-4">
                   <div className="text-guarana-green mb-4 flex justify-center">
                     {practice.icon}
