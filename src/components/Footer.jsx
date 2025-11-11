@@ -246,12 +246,12 @@ const Footer = () => {
             </div>
 
             <a
-              href="https://simplessolucao.com.br"
+              href="https://inamob.com.br"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xs md:text-sm justify-self-end"
             >
-              Feito por Simples Solução TI
+              Feito por Inamob Negocios Digitais
             </a>
           </div>
         </div>
