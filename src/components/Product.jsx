@@ -17,7 +17,7 @@ const Product = ({ categoryId = "", id = "" }) => {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="h-150">
+          <div className="h-full md:h-150">
             <img
               key={product.id}
               src={product.image}
