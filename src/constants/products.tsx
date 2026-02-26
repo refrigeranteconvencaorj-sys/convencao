@@ -10,6 +10,7 @@ import refrigeranteVitts from "../assets/produtos/refrigerante-vitts.png";
 import refrigeranteAbacaxi from "../assets/produtos/refrigerante-abacaxi.png";
 import refrigeranteLimao from "../assets/produtos/refrigerante-limao.png";
 import refrigeranteCola from "../assets/produtos/refrigerante-cola.png";
+import refrigeranteCola350 from "../assets/produtos/refrigerante-cola-350.png";
 
 import especialChinotto from "../assets/produtos/especial-chinotto.png";
 import especialEnergéticoMSX from "../assets/produtos/especial-energético-msx.png";
@@ -120,6 +121,19 @@ export const productCategories = [
           "O refrigerante cola Convenção possui uma formulação exclusiva que vai te conquistar. Saia da rotina e experimente o novo.",
         image: refrigeranteCola,
         sizes: ["350ml", "600ml", "2 litros"],
+        energyValue: ["92kcal/386kJ", "", "5%"],
+        carbohydrates: ["23g", "", "5"],
+        totalSugars: ["23g", "", ""],
+        addedSugars: ["", "", ""],
+        sodium: ["8mg", "", "0%"],
+      },
+      {
+        name: "cola-350",
+        label: "Cola 350ml",
+        description:
+          "O refrigerante cola Convenção possui uma formulação exclusiva que vai te conquistar. Saia da rotina e experimente o novo.",
+        image: refrigeranteCola350,
+        sizes: ["350ml"],
         energyValue: ["92kcal/386kJ", "", "5%"],
         carbohydrates: ["23g", "", "5"],
         totalSugars: ["23g", "", ""],
