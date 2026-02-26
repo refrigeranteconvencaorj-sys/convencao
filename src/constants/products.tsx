@@ -4,7 +4,6 @@ import { Droplets, Zap } from "lucide-react";
 
 import refrigeranteGuarana from "../assets/produtos/refrigerante-guarana.png";
 import refrigeranteGuaranaZero from "../assets/produtos/refrigerante-guarana-zero.png";
-import refrigeranteFrutaina from "../assets/produtos/refrigerante-frutaina.png";
 import refrigeranteLaranja from "../assets/produtos/refrigerante-laranja.png";
 import refrigeranteUva from "../assets/produtos/refrigerante-uva.png";
 import refrigeranteVitts from "../assets/produtos/refrigerante-vitts.png";
@@ -48,19 +47,6 @@ export const productCategories = [
         totalSugars: ["", "", ""],
         addedSugars: ["", "", ""],
         sodium: ["7,3mg", "", ""],
-      },
-      {
-        name: "frutaina",
-        label: "Frutaína",
-        description:
-          "É nostalgia pura! Falar desse refrigerante é lembrar da infância. A Frutaína Convenção é o mix de diferentes sabores de refrigerantes: guaraná, maçã e limão. Tudo disponível em tamanhos diferentes para cada sede. Cada gole é uma nova lembrança!",
-        image: refrigeranteFrutaina,
-        sizes: ["350ml", "600ml", "2 litros"],
-        energyValue: ["28kcal", "56kcal", "3"],
-        carbohydrates: ["7g", "14g", "5"],
-        totalSugars: ["7g", "14g", ""],
-        addedSugars: ["7g", "14g", "28"],
-        sodium: ["18mg", "36mg", "2"],
       },
       {
         name: "laranja",
@@ -167,7 +153,7 @@ export const productCategories = [
         vitaminaB6: ["0.52mg", "1mg", "100%"],
         vitaminaB12: ["0.50mgc", "1mgc", "100%"],
       },
-       {
+      {
         name: "msx-convencao_2L",
         label: "Energético MSX 2L",
         description:

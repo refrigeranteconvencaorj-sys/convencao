@@ -1,4 +1,4 @@
-import links from "./links"
+import links from "./links";
 
 export const FAQ_DATA = [
   {
@@ -71,7 +71,7 @@ export const FAQ_DATA = [
       "Quais produtos fazem parte do portfólio da Refrigerantes Convenção?",
     content: [
       "Refrigerantes na versão tradicional em PET nos diferentes sabores:",
-      "guaraná, guaraná zero açúcar, frutaína, laranja, uva, limão, Vitt's, abacaxi e",
+      "guaraná, guaraná zero açúcar, laranja, uva, limão, Vitt's, abacaxi e",
       "cola, energético MSX e bebidas diferenciadas, como o Chinotto,",
       "bebida de origem italiana",
     ],

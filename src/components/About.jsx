@@ -40,10 +40,10 @@ const About = () => {
             <p className="text-sm md:text-base text-justify text-gray-600 leading-relaxed">
               É uma indústria de bebidas que emprega cerca de 280 funcionários,
               possui grande portfólio, do qual fazem parte: refrigerantes em PET
-              nos diferentes sabores: guaraná, guaraná zero açúcar, frutaína,
-              laranja, uva, limão, Vitt's, abacaxi e cola, energético MSX e
-              bebidas diferenciadas, como o Chinotto, bebida à base de extratos
-              vegetais com grande tradição na Itália.
+              nos diferentes sabores: guaraná, guaraná zero açúcar, laranja,
+              uva, limão, Vitt's, abacaxi e cola, energético MSX e bebidas
+              diferenciadas, como o Chinotto, bebida à base de extratos vegetais
+              com grande tradição na Itália.
               <br />A Convenção Refrigerantes consolida-se no mercado de bebidas
               com uma das melhores empresas por oferecer uma diversidade de
               produtos para celebrar vários momentos e que sempre buscou em seus
