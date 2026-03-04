@@ -127,7 +127,7 @@ export const productCategories = [
         addedSugars: ["", "", ""],
         sodium: ["8mg", "", "0%"],
       },
-      /*
+      
       {
         name: "Frutaina",
         label: "Frutaina",
@@ -141,7 +141,7 @@ export const productCategories = [
         addedSugars: ["", "", ""],
         sodium: ["8mg", "", "0%"],
       },
-      */
+      
     ],
   },
   {
