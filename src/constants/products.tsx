@@ -10,7 +10,7 @@ import refrigeranteVitts from "../assets/produtos/refrigerante-vitts.png";
 import refrigeranteAbacaxi from "../assets/produtos/refrigerante-abacaxi.png";
 import refrigeranteLimao from "../assets/produtos/refrigerante-limao.png";
 import refrigeranteCola from "../assets/produtos/refrigerante-cola.png";
-// import refrigeranteFrutaina from "../assets/produtos/refrigerante-frutaina.png";
+import refrigeranteFrutaina from "../assets/produtos/refrigerante-frutaina.png";
 
 import especialChinotto from "../assets/produtos/especial-chinotto.png";
 import especialEnergéticoMSX from "../assets/produtos/especial-energético-msx.png";
