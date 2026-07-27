@@ -23,23 +23,34 @@ const Products = () => {
                 {category.title}
               </h2>
 
-              <div className="flex flex-wrap justify-center gap-4">
-                {category.products.map((product) => (
-                  <a
-                    key={product.name}
-                    href={"produtos/" + category.name + "/" + product.name}
-                    className="text-center text-xl font-medium space-y-5 transition-colors text-gray-700"
-                  >
-                    <img
-                      className="transform transition-all hover:scale-110"
-                      src={product.image}
-                      width={300}
-                      height={300}
-                    />
+              <div className="flex flex-wrap items-end justify-center gap-4">
+                {category.products.map((product) => {
+                  const maxHeightCm = Math.max(
+                    ...category.products.map((p) => p.heightCm || 0)
+                  );
+                  const scale =
+                    product.heightCm && maxHeightCm
+                      ? product.heightCm / maxHeightCm
+                      : 1;
 
-                    <span>{product.label}</span>
-                  </a>
-                ))}
+                  return (
+                    <a
+                      key={product.name}
+                      href={"produtos/" + category.name + "/" + product.name}
+                      className="text-center text-xl font-medium space-y-5 transition-colors text-gray-700"
+                    >
+                      <div className="flex h-40 items-end justify-center md:h-56">
+                        <img
+                          className="mx-auto max-w-none object-contain transform transition-all hover:scale-110"
+                          src={product.image}
+                          style={{ height: `${scale * 100}%`, width: "auto" }}
+                        />
+                      </div>
+
+                      <span>{product.label}</span>
+                    </a>
+                  );
+                })}
               </div>
             </div>
           ))}

@@ -157,6 +157,7 @@ export const productCategories = [
         description:
           "Bebida sem conservantes e funcional, desenvolvida com ingredientes estimulantes e termogênicos para dar um up na sua energia. Temos a quantidade ideal para cada ocasião. MSX, liberte seu instinto",
         image: especialEnergéticoMSX,
+        heightCm: 13.9,
         sizes: ["269ml", "2 litros"],
         energyValue: ["89", "178", "9%"],
         carbohydrates: ["7", "14", "5"],
@@ -175,6 +176,7 @@ export const productCategories = [
         description:
           "Bebida sem conservantes e funcional, desenvolvida com ingredientes estimulantes e termogênicos para dar um up na sua energia. Temos a quantidade ideal para cada ocasião. MSX, liberte seu instinto",
         image: especialEnergético2LMSX,
+        heightCm: 33.5,
         sizes: ["269ml", "2 litros"],
         energyValue: ["89", "178", "9%"],
         carbohydrates: ["7", "14", "5"],
@@ -193,6 +195,7 @@ export const productCategories = [
         description:
           "Nossa bebida de origem italiana. Composta por extratos vegetais e ervas aromáticas, perfeita para ser consumida após as refeições. O verdadeiro sabor da Itália em 269ml de puro sabor.",
         image: especialChinotto,
+        heightCm: 13.9,
         sizes: ["269ml"],
         energyValue: ["28kcal", "75kcal", "4"],
         carbohydrates: ["7g", "19g", "6"],
