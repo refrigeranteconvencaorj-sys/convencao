@@ -3,7 +3,7 @@ export const locations = [
     title: "Loja de Fábrica - Campo Grande - RJ",
     address: "Av. Brasil, 44148\nCampo Grande - Distrito Industrial - RJ",
     phone: "(21) 3526-5372",
-    hours: "3ª à 6ª das 10h às 20h\nSábado das 9h às 18h",
+    hours: "2ª à 6ª das 8h às 18h30",
   },
   {
     title: "Choperia Ravache - Park Shopping Campo Grande - RJ",

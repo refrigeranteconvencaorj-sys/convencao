@@ -4,6 +4,7 @@ import { Droplets, Zap } from "lucide-react";
 
 import refrigeranteGuarana from "../assets/produtos/refrigerante-guarana.png";
 import refrigeranteGuaranaZero from "../assets/produtos/refrigerante-guarana-zero.png";
+import refrigeranteGuaranaZeroLata from "../assets/produtos/refrigerante-guarana-zero-lata.png";
 import refrigeranteLaranja from "../assets/produtos/refrigerante-laranja.png";
 import refrigeranteUva from "../assets/produtos/refrigerante-uva.png";
 import refrigeranteVitts from "../assets/produtos/refrigerante-vitts.png";
@@ -48,6 +49,19 @@ export const productCategories = [
         totalSugars: ["", "", ""],
         addedSugars: ["", "", ""],
         sodium: ["7,3mg", "", ""],
+      },
+      {
+        name: "guarana-zero-lata",
+        label: "Guaraná Zero Açúcar Lata 350ml",
+        description:
+          "O Guaraná Convenção Zero Açúcar agora em lata! O mesmo sabor marcante do guaraná brasileiro, sem conservantes, sem açúcar e com baixa caloria.",
+        image: refrigeranteGuaranaZeroLata,
+        sizes: ["350ml"],
+        energyValue: ["0kcal", "0kcal", "0"],
+        carbohydrates: ["0g", "0g", "0"],
+        totalSugars: ["0g", "0g", ""],
+        addedSugars: ["0g", "0g", "0"],
+        sodium: ["8,1mg", "28mg", "1"],
       },
       {
         name: "laranja",
