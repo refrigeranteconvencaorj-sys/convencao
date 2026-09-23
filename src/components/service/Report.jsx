@@ -1,25 +1,42 @@
+import React from "react";
 import trabalheConosco from "../../assets/trabalhe-conosco.png";
-import links from "../../constants/links";
-
-const link = `https://formsubmit.co/${links.forms.report}`;
 
 const NewReport = () => {
+  const [loading, setLoading] = React.useState(false);
+
   const renderForm = () => {
     return (
       <form
         id="formulario"
         className="grid grid-cols-12 space-x-4 space-y-4"
         name="formulario"
-        action={link}
-        method="POST"
-      >
-        <input type="hidden" name="_captcha" value="false" />
-        <input
-          type="hidden"
-          name="_next"
-          value="https://guaranaconvencaorj.com.br"
-        />
+        onSubmit={(e) => {
+          e.preventDefault();
 
+          const mensagem = e.target.mensagem.value;
+          setLoading(true);
+
+          fetch("/api/send-report", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ mensagem }),
+          })
+            .then((res) => {
+              setLoading(false);
+              if (!res.ok) {
+                alert("Erro ao enviar.");
+                return;
+              }
+
+              alert("Enviado com sucesso!");
+              e.target.reset();
+            })
+            .catch(() => {
+              setLoading(false);
+              alert("Erro ao enviar.");
+            });
+        }}
+      >
         {/* mensagem */}
         <div className="col-span-12">
           <label className="block text-sm font-medium">Mensagem *</label>
@@ -34,9 +51,10 @@ const NewReport = () => {
 
         <button
           type="submit"
+          disabled={loading}
           className="col-span-2 md:col-span-2 font-medium py-2 px-4 rounded-md transition bg-primary text-white hover:bg-secondary"
         >
-          Enviar
+          {loading ? "Enviando..." : "Enviar"}
         </button>
       </form>
     );
